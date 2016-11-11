@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.sample.mqtt.MainActivity">
+
+        <TextView
+            android:id="@+id/text"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />>
+
+        <EditText
+            android:id="@+id/textPub"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/connectBtn"
+            android:text="connect"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <Button
+            android:id="@+id/subscribeBtn"
+            android:text="subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <Button
+            android:id="@+id/publishBtn"
+            android:text="publish"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </LinearLayout>
+</layout>
